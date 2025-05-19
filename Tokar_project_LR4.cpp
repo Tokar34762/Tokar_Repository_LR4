@@ -28,7 +28,8 @@ void EnterArrayElements() {
 }
 // Функция для вычисления суммы всех элементов массива
 void CalculateSum() {
-    
+    int sum = accumulate(arr.begin(), arr.end(), 0);
+    cout << "Сумма всех элементов массива: " << sum << endl;
 }
 // Функция для нахождения среднего значения элементов массива
 void CalculateAverage() {
