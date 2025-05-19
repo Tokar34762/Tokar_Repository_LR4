@@ -22,7 +22,12 @@ void CalculateSum() {
 }
 // Функция для нахождения среднего значения элементов массива
 void CalculateAverage() {
-    
+    if (N <= 0) {
+        cout << "Сначала введите размер массива." << endl;
+        return;
+    }
+    double average = static_cast<double>(accumulate(arr.begin(), arr.end(), 0)) / N;
+    cout << "Среднее значение элементов массива: " << average << endl;
 }
 // Структура меню
 struct MenuItem {
